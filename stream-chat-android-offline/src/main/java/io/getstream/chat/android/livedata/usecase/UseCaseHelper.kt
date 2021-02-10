@@ -159,4 +159,6 @@ public class UseCaseHelper internal constructor(chatDomainImpl: ChatDomainImpl) 
      * Downloads selected attachment
      */
     public val downloadAttachment: DownloadAttachment = DownloadAttachmentImpl(chatDomainImpl)
+
+    public val queryMembers: QueryMembers = QueryMembersImpl(chatDomainImpl)
 }
